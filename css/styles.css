@@ -1,0 +1,22 @@
+@import "./reset.css";
+
+/* CSS STYLE */
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner__circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #2ecc71;
+    box-shadow: 1px 1px 5px 1px #34495e;
+}
