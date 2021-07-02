@@ -15,6 +15,10 @@
 
 <hr>
 
-## 참조
+## 디자인
 
-* ### PINTEREST : *https://i.pinimg.com/originals/f2/50/64/f25064efd7a1ee37e63f4ee1fa5dcf26.png*
+### PINTEREST : 
+*https://i.pinimg.com/originals/f2/50/64/f25064efd7a1ee37e63f4ee1fa5dcf26.png*
+    
+### BUTTON : 
+**POWERFUL** **COOL** **TRANDITIONAL** **ROMANTIC**
