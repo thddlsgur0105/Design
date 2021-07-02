@@ -1,11 +1,13 @@
+// 해당하는 버튼 클릭하면 관련 색의 디자인 버튼들만 클릭됨
+
 class ActiveCircle {
-    constructor(css) {
-        this.createCircle(css);
-        this.activate();
-    }
-    createCircle = ({size, color, radius, top, left, text}) => {
+    constructor({size, color, radius, top, left, text, type}) {
         this.main = document.getElementById("main");
         this.circle = document.createElement("button");
+        this.circle.id = `design__${type}`;
+        this.StyleCircle({size, color, radius, top, left, text});
+    }
+    StyleCircle = ({size, color, radius, top, left, text}) => {
         if (text) {
             this.circle.innerHTML = text;
         }
@@ -23,10 +25,6 @@ class ActiveCircle {
             color: #2c3e50;
         `
         this.main.appendChild(this.circle);
-    }
-    activate = () => {
-        this.circle.addEventListener("mousedown", this.handleBtnDown);
-        this.circle.addEventListener("mouseup", this.handleBtnUp);
     }
     handleBtnDown = (event) => {
         // Btn Click Down Movement
@@ -46,43 +44,60 @@ class ActiveCircle {
     }
 }
 
+class ActiveForm extends ActiveCircle {
+    // Default: Button Design + Extends: Functionality
+    constructor(css) {
+        super(css)
+        // Change Circle into Form 
+        this.form = this.circle;
+        this.form.id = "btn";
+        this.activateForm();
+    }
+    activateForm = () => {
+        this.form.addEventListener("mousedown", this.handleBtnDown);
+        this.form.addEventListener("mouseup", this.handleBtnUp);
+    }
+}
+
 // CIRCLE AREA
-
 const circle1 = new ActiveCircle({
-    size: "120px",
-    color: "#A1FAFF",
-    radius: "50%",
-    top: "500px",
-    left: "1000px",
-});
-
-const circle2 = new ActiveCircle({
-    size: "170px",
-    color: "#4BA5FF",
-    radius: "50%",
-    top: "300px",
-    left: "700px",
-});
-
-const circle3 = new ActiveCircle({
     size: "50px",
     color: "#3E48FF",
     radius: "50%",
     top: "100px",
     left: "300px",
+    type: "cool",
 });
 
-const circle4 = new ActiveCircle({
+const circle2 = new ActiveCircle({
     size: "130px",
     color: "#3969E8",
     radius: "50%",
     top: "100px",
     left: "450px",
+    type: "cool",
+});
+
+const circle3 = new ActiveCircle({
+    size: "170px",
+    color: "#4BA5FF",
+    radius: "50%",
+    top: "300px",
+    left: "700px",
+    type: "cool",
+});
+
+const circle4 = new ActiveCircle({
+    size: "120px",
+    color: "#A1FAFF",
+    radius: "50%",
+    top: "500px",
+    left: "1000px",
+    type: "cool",
 });
 
 // FORM AREA
-
-const form1 = new ActiveCircle({
+const form1 = new ActiveForm({
     size: "100px",
     color: "#ecf0f1",
     radius: "10%",
@@ -91,11 +106,29 @@ const form1 = new ActiveCircle({
     text: "POWERFUL"
 });
 
-const form2 = new ActiveCircle({
+const form2 = new ActiveForm({
     size: "100px",
     color: "#ecf0f1",
     radius: "10%",
     top: "120px",
     left: "10px",
     text: "COOL"
+});
+
+const form3 = new ActiveForm({
+    size: "100px",
+    color: "#ecf0f1",
+    radius: "10%",
+    top: "230px",
+    left: "10px",
+    text: "MODREN"
+});
+
+const form4 = new ActiveForm({
+    size: "100px",
+    color: "#ecf0f1",
+    radius: "10%",
+    top: "340px",
+    left: "10px",
+    text: "ROMANTIC"
 });
