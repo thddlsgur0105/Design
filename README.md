@@ -1,6 +1,7 @@
 # Design
 
-![Button Img](./img/img1.jpg)
+![img1](https://user-images.githubusercontent.com/70431221/124243220-95194b80-db58-11eb-899a-827f177223e2.JPG)
+
 
 ## 사용언어
 
