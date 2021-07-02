@@ -1,5 +1,7 @@
 # Design
 
+![Button Img](./img/img1.jpg)
+
 ## 사용언어
 
 ![Javascript Badge](https://img.shields.io/badge/-Javascript-%23F7DF1E)
@@ -21,4 +23,7 @@
 *https://i.pinimg.com/originals/f2/50/64/f25064efd7a1ee37e63f4ee1fa5dcf26.png*
     
 ### BUTTON : 
-**POWERFUL** **COOL** **TRANDITIONAL** **ROMANTIC**
+* **POWERFUL** 
+* **COOL** 
+* **TRANDITIONAL** 
+* **ROMANTIC**
