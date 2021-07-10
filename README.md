@@ -17,7 +17,7 @@
 
 <hr>
 
-## 디자인
+## 첫 번째 디자인
 
 ### PINTEREST : 
 *https://i.pinimg.com/originals/f2/50/64/f25064efd7a1ee37e63f4ee1fa5dcf26.png*
@@ -27,3 +27,7 @@
 * **COOL** 
 * **TRANDITIONAL** 
 * **ROMANTIC**
+
+<hr>
+
+## 두 번째 디자인
